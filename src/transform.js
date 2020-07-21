@@ -2,7 +2,11 @@ export default function transform(input, options) {
   const lines = input
     .split('\n')
     .filter(Boolean)
-    .map(s => s.replace(/ major from/i, ',').replace(/\([0-9]+\)/, ''));
+    .map(s => {
+      return s.replace(/ major from/i, ',')
+        .replace(/ major of/i, ',')
+        .replace(/\([0-9]+\)/, '');
+    });
   const out = Object.create(null);
   let outputString = '';
   for (let line of lines) {
@@ -37,6 +41,7 @@ export default function transform(input, options) {
   }
 
   function byImportance(a, b) {
+    console.log(`a: ${a}`);
     const order = options
       .citiesOrderOfImportance
       .value.map(s => new RegExp(s, 'i'));
