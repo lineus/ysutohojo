@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: none;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: rgb(100, 100, 200);
+	--secondary: rgb(224, 224, 224);
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding-left: 6vw;
+	padding-top: 3vh;
+	justify-content: center;
+	background: var(--primary);
+	color: var(--secondary);
+}
