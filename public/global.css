@@ -16,9 +16,18 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	padding-left: 6vw;
 	padding-top: 3vh;
 	justify-content: center;
 	background: var(--primary);
 	color: var(--secondary);
+}
+
+body > h1 {
+	margin: 1rem 1rem 1rem 1rem;
+}
+
+#container {
+	padding-left: 6vw;
+	color: var(--primary);
+	background: var(--secondary);
 }
