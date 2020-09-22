@@ -34,10 +34,11 @@
 <style>
 	#converter {
 		width: 80vw;
-		height: 98vh;
+		height: 96vh;
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
+
 	#textInput, #textOutput {
 		width: 80vw;
 		height: 40vh;
